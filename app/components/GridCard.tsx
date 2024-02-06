@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useAppSelector } from '../redux/store';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const GridCard = () => {
   const productsArray = useAppSelector(

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Container } from '../..';
 const FooterRights = () => {
+  
   return (
     <Box sx={{ backgroundColor: '#FAFAFA', height: '74px', width: '100%' }}>
       <Container>

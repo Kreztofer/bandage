@@ -18,7 +18,6 @@ const Modal: React.FC<ModalProps> = ({
   body,
   title,
   setModal,
-  onSubmit,
   total,
   onGoBack,
 }) => {
