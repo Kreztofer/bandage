@@ -2,15 +2,20 @@ import { createSlice } from '@reduxjs/toolkit';
 import { PRODUCT } from '@/app/models';
 
 const loadCartFromLocalStorage = () => {
-  const storedCart = localStorage.getItem('cart');
-  return storedCart ? JSON.parse(storedCart) : [];
+  if (typeof window !== 'undefined') {
+    const storedCart = localStorage.getItem('cart');
+    return storedCart ? JSON.parse(storedCart) : [];
+  }
+  return [];
 };
 
 const loadWishlistFromLocalStorage = () => {
-  const storedWishlist = localStorage.getItem('wishlist');
-  return storedWishlist ? JSON.parse(storedWishlist) : [];
+  if (typeof window !== 'undefined') {
+    const storedWishlist = localStorage.getItem('wishlist');
+    return storedWishlist ? JSON.parse(storedWishlist) : [];
+  }
+  return [];
 };
-
 interface CartItem extends PRODUCT {
   quantity: number;
 }
