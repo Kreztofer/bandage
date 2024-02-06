@@ -29,7 +29,7 @@ Highlight the key features of your application. Some potential features include:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/ecommerce-app.git
+   git clone https://github.com/Kreztofer/bandage.git
    
 ## Tech Stack
 
