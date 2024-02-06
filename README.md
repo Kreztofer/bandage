@@ -16,7 +16,7 @@ Bandage is an e-commerce project developed as a requirement for the senior front
 
 ## Features
 
-Highlight the key features of your application. Some potential features include:
+ Key features of the application include:
 
 - Shopping cart functionality
 - Checkout process
