@@ -36,8 +36,18 @@ const TopNav = () => {
   const [modal, setModal] = useState<boolean>(false);
   const [modal2, setModal2] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
+  const [isClient, setIsClient] = useState(false);
 
   const cartArray = useAppSelector((state) => state.rootReducer.product.cart);
+
+  useEffect(() => {
+    console.log(cartArray);
+  }, [cartArray]);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -110,6 +120,7 @@ const TopNav = () => {
       setModal2(true);
     }
   };
+
   const body = (
     <div className="w-full">
       {cartArray.length > 0 ? (
@@ -301,7 +312,7 @@ const TopNav = () => {
                   color: '#23A6F0',
                   fontWeight: '600',
                 }}
-                component="p"
+                component="div"
               >
                 Login / Register
               </Typography>
@@ -320,18 +331,22 @@ const TopNav = () => {
                 className="relative cursor-pointer"
               >
                 <BsCart size={18} color="#23A6F0" />
-                <Typography className="absolute top-[-10px] text-[#23A6F0] text-[3px] left-5">
-                  {cartArray.length}
-                </Typography>
+                {isClient && (
+                  <Typography className="absolute top-[-10px] text-[#23A6F0] text-[16px] left-5">
+                    {cartArray?.length}
+                  </Typography>
+                )}
               </Box>
               <Box
                 onClick={() => handleSetModal('wishlist')}
                 className="relative cursor-pointer"
               >
                 <IoIosHeartEmpty size={20} color="#23A6F0" />
-                <Typography className="absolute top-[-10px] text-[#23A6F0] text-[3px] left-5">
-                  {wishListArray.length}
-                </Typography>
+                {isClient && (
+                  <Typography className="absolute top-[-10px] text-[#23A6F0] text-[16px] left-5">
+                    {wishListArray?.length}
+                  </Typography>
+                )}
               </Box>
             </Box>
           </Box>
