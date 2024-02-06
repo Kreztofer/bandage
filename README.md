@@ -1,6 +1,6 @@
 # Bandage
 
-This is an e-ommerce application developed using Next.js, styled with Material-UI and Tailwind CSS, and state management handled with Redux Toolkit.
+This is an e-commerce application developed using Next.js, styled with Material-UI and Tailwind CSS, and state management handled with Redux Toolkit.
 
 ## Table of Contents
 
@@ -37,6 +37,8 @@ Next.js - React framework for building server-rendered applications.
 Material-UI - React UI framework for building responsive and accessible web applications.
 Tailwind CSS - A utility-first CSS framework.
 Redux Toolkit - State management library for React applications.
+Axios - JavaScript library for making HTTP requests.
+React Hot Toast- Library for snack-bar confirmation
 
 ## Folder Structure
 
