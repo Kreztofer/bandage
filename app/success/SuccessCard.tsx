@@ -9,7 +9,7 @@ const SuccessCard = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       router.push('/');
-    }, 3000);
+    }, 5000);
     return () => clearTimeout(timeoutId);
     // eslint-disable-next-line
   }, []);

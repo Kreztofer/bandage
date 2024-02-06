@@ -67,7 +67,7 @@ const Hero = () => {
               }}
               component="h6"
             >
-              5 Itemspp
+              5 Items
             </Typography>
             <Typography
               sx={{
