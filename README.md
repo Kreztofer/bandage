@@ -1,6 +1,6 @@
-# Ecommerce Application
+# Bandage
 
-This is an eCommerce application developed using Next.js, styled with Material-UI and Tailwind CSS, and state management handled with Redux Toolkit.
+This is an e-ommerce application developed using Next.js, styled with Material-UI and Tailwind CSS, and state management handled with Redux Toolkit.
 
 ## Table of Contents
 
